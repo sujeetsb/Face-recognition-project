@@ -26,7 +26,7 @@ const VideoFeed = () => {
                         webkitallowfullscreen
                         mozallowfullscreen
 			// !!! TO CHANGE !!!
-                        src="YOUR FEED HERE"
+                        src="http://192.168.43.1:8080/shot.jpg"
                         frameBorder="0"
                         width="100%"
                         height="576" />

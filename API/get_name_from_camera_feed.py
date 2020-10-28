@@ -29,7 +29,7 @@ class VideoCapture:
         return self.q.get()
 
 # Select the webcam of the computer
-# video_capture = VideoCapture('https://stream-eu1-charlie.dropcam.com:443/nexus_aac/b85a6ec812c045cd921f4164e8e7ecc0/playlist.m3u8?public=GqJifk6U25')
+# video_capture = VideoCapture('http://192.168.43.1:8080/shot.jpg')
 video_capture = VideoCapture(0)
 
 # video_capture.set(5,1)
@@ -127,7 +127,7 @@ while True:
         # Draw a label with a name below the face
         # cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
-        cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+        cv2.putText(frame, name, (left + 6, bottom - 6), font, 0.5, (255, 255, 255), 1)
 
     # Display the resulting image
     cv2.imshow('Video', frame)

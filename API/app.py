@@ -223,8 +223,6 @@ def delete_employee(name):
 
     return jsonify(answer)
 
-
-                                 
 # * -------------------- RUN SERVER -------------------- *
 if __name__ == '__main__':
     # * --- DEBUG MODE: --- *
